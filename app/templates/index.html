@@ -20,20 +20,30 @@
     <button onclick="reveal()" class="contentText bg-accent txt-main">Predict My Grade -></button>
     </div>
 </div>
-<div class="content" id='content'>
-    <div class="formContainer">
-        <div class="form1">
-            <form action="">
-                <label for="Name" class="contentText">
-                    Name :
-                </label>
-                <input type="text" name="Name" id="userName"> <br>
-                <label for="E-mail" class="contentText">
-                    E-mail : 
-                </label>
-                <input type="email" name="E_mail" id="userMail">
-            </form>
+<div class="content fadeInAnimation" id='content'>
+    <div class="formContainer shadow" id='form1'>
+    <div class="forms">
+        <div class="formImage">
+            <h2 class="subHeading formHeading">
+                Get Started
+                <small class="contentText">Tell me about yourself Two</small>
+            </h2>
         </div>
+        <form class="formContent" method="POST">
+            <div class="input">
+                <input type="text" name="Name" class="inputField" id="name" required>
+                <label for="" class="inputLabel">Full Name</label>
+            </div>
+            <div class="input">
+                <input type="email" name="Email" class='inputField' id="email" required>
+                <label for="" class="inputLabel">Email</label>
+            </div>
+            <div class="action">
+                <input type="submit" class="actionButton" value="Submit">
+            </div>
+        </form>
     </div>
+    </div>
+
 </div>
 {%endblock%}

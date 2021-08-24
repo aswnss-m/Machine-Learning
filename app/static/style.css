@@ -1,8 +1,11 @@
+*{
+    overflow-x: hidden;
+}
 :root{
-    --main-color: #F3F1F5;
-    --secondary-color :#F0D9FF;
-    --accent :#BFA2DB;
-    --text-color: #7F7C82;
+    --main-color: #EFEFEF;
+    --secondary-color :#FFC947;
+    --accent :#185ADB;
+    --text-color: #0A1931;
     /* --heading: 'Righteous', cursive;
     --sub-heading: 'Rubik', sans-serif;
     --content-text : 'Merriweather', serif; */
