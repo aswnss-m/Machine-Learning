@@ -7,14 +7,21 @@
     <meta name="author" content = "Aswin Lal M">
     <meta namae="description" content="Laura the AI Bot- House Price Estimating bot">
     <meta name="keywords" content="Laura,HousePrice,AI,MachineLearning,PriceEstimator">
+    <link rel="stylesheet" href="{{url_for('static', filename='loader.css')}}">
     {%block head%}
-    
-
     {%endblock%}
 </head>
-<body>
-    {%block body%}
-    
-    {%endblock%}
+<body onload="loader()">
+    <div class="loader-wrapper" id='loader'>
+        <span class="loader"><span class="loader-inner"></span></span>
+    </div>
+    <script>
+        var load = document.getElementById("loader");
+        function loader(){
+            load.style.display='none';
+        }
+        </script>
+        {%block body%}
+        {%endblock%}
 </body>
 </html>
