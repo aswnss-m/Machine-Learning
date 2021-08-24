@@ -1,0 +1,62 @@
+:root{
+    --main-color: #F3F1F5;
+    --secondary-color :#F0D9FF;
+    --accent :#BFA2DB;
+    --text-color: #7F7C82;
+    /* --heading: 'Righteous', cursive;
+    --sub-heading: 'Rubik', sans-serif;
+    --content-text : 'Merriweather', serif; */
+}
+body{
+    overflow-x: hidden;
+    height: 100%;
+}
+.fadeInAnimation {
+    animation: fadeInAnimation ease 1s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+}
+@keyframes fadeInAnimation {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+.shadow{
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+.heading {
+    font-family: 'Righteous', cursive;
+}
+.subHeading{
+    font-family: 'Rubik', sans-serif;
+}
+.contentText{
+    font-family: 'Merriweather', serif;
+}
+.bg-main{
+    background-color: var(--main-color);
+}
+.bg-sd{
+    background-color: var(--secondary-color);
+}
+.bg-accent{
+    background-color: var(--accent);
+}
+.bg-dark{
+    background-color: var(--text-color);
+}
+.txt-main{
+    color: var(--main-color);
+}
+.txt-sd{
+    color: var(--secondary-color);
+}
+.txt-accent{
+    color: var(--accent);
+}
+.txt-dark{
+    color: var(--text-color);
+}

@@ -1,27 +1,38 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
+    <!-- Meta Tags -->
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="author" content = "Aswin Lal M">
+    <meta name="author" content="Aswin Lal M">
     <meta namae="description" content="Laura the AI Bot- House Price Estimating bot">
     <meta name="keywords" content="Laura,HousePrice,AI,MachineLearning,PriceEstimator">
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Merriweather &family=Righteous&family=Rubik:wght@500&display=swap"
+        rel="stylesheet">
+    
+    <!-- StyleSheets -->
     <link rel="stylesheet" href="{{url_for('static', filename='loader.css')}}">
-    {%block head%}
-    {%endblock%}
+    <link rel="stylesheet" href="{{url_for('static',filename='style.css')}}">
+
+    <!-- Jinja -->
+    {% block head %}{% endblock %}
 </head>
+
 <body onload="loader()">
-    <div class="loader-wrapper" id='loader'>
-        <span class="loader"><span class="loader-inner"></span></span>
-    </div>
-    <script>
-        var load = document.getElementById("loader");
-        function loader(){
-            load.style.display='none';
+    <div class="loader-wrapper" id='loader'> <span class="loader"><span class="loader-inner"></span></span> </div>
+    <script> var load = document.getElementById("loader");
+        function loader() {
+            load.style.display = 'none';
         }
-        </script>
-        {%block body%}
-        {%endblock%}
+    </script>
+    {% block body %}{% endblock %}
 </body>
+
 </html>

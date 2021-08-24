@@ -3,9 +3,21 @@
 
 {%block head%}
 <title>Project - Laura</title>
+<link rel="stylesheet" href="{{url_for('static',filename='index.css')}}">
+<script src="{{url_for('static',filename='index.js')}}"></script>
 {%endblock%}
 
 {%block body%}
-<h1>Welcome , Hi I am Laura</h1>
-<h3>Nice to Meet You</h3>
+<div class="fadeInAnimation shadow intro bg-main txt-dark" id="intro">
+    <div class="introContents txt-main">
+        <h1 class="heading">Welcome , Hi I am Laura</h1>
+    <h3 class="subHeading">Nice to Meet You</h3>
+    <p class="contentText">
+        I am a Artificial Intelligence Bot,
+        capable of predicting your next sem grade
+        with your previous grades and class performance
+    </p>
+    <button onclick="reveal()" class="contentText bg-accent txt-main">Predict My Grade -></button>
+    </div>
+</div>
 {%endblock%}
