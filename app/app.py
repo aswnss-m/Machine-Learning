@@ -13,6 +13,6 @@ def index():
 
 @app.route('/<string:name>')
 def predict(name):
-    return "Hello " + name
+    return render_template('predict.html',name=name)
 if __name__=='__main__':
     app.run(debug=True)

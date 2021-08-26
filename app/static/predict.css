@@ -1,0 +1,121 @@
+.body{
+    height: 100%;
+}
+.content{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.formContainer {
+    width: 95vw;
+    height: fit-content;
+    max-width: 500px;
+    display: inline-block;
+    /* position:absolute; */
+    /* max-width: ; */
+}
+input {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    border-radius: 0;
+}
+.forms {
+    display: flex;
+    flex-direction: column;
+    /* width: 95vw; */
+    background-color: #FFF;
+    -webkit-transition: 1s ease-in-out;
+    -moz-transition: 1s ease-in-out;
+    -o-transition: 1s ease-in-out;
+    transition: 1s ease-in-out;
+}
+.forms * {
+    padding: 5px 10px;
+}
+.formImage {
+    overflow: hidden;
+    padding-bottom: 65%;
+    /* background-image: url("https://images.unsplash.com/photo-1504593811423-6dd665756598?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=750&q=80");
+     */
+    background-image: url("./izuku\ midoriya\ illustration.png");
+    background-repeat: no-repeat;
+    /* background-size: ; */
+    background-size: cover;
+    background-position: 0 5%;
+    position: relative;
+}
+.formHeading {
+    position: absolute;
+    left: 10%;
+    top: 15%;
+    right: 10%;
+    font-size: 1.9rem;
+    font-weight: 700;
+    /* color: var(--main-color); */
+    line-height: 1.222;
+}
+.formHeading small {
+    display: block;
+    font-size: 0.5em;
+    font-weight: 400;
+    margin-top: 0.25em;
+}
+
+.formContent {
+    padding: 2rem 1rem 0;
+}
+.input {
+    display: flex;
+    flex-direction: column-reverse;
+    position: relative;
+    padding-top: 1.5rem;
+}
+.input + .input {
+    margin-top: 1.5rem;
+}
+.inputLabel {
+    color: var(--text-color);
+    position: absolute;
+    top: 1.5rem;
+    transition: 0.25s ease;
+  }
+  
+  .inputField {
+    border: 0;
+    z-index: 1;
+    background-color: transparent;
+    border-bottom: 2px solid var(--secondary-color);
+    font: inherit;
+    font-size: 1.125rem;
+    padding: 0.25rem 0;
+  }
+  .inputField:focus, .inputField:valid {
+    outline: 0;
+    border-bottom-color: var(--accent);
+  }
+  .inputField:focus + .inputLabel, .inputField:valid + .inputLabel {
+    color: var(--accent);
+    transform: translateY(-1.5rem);
+  }
+
+  .action {
+    margin-top: 2rem;
+  }
+  
+  .actionButton {
+    font: inherit;
+    font-size: 1.25rem;
+    padding: 1em;
+    width: 100%;
+    font-weight: 500;
+    background-color: var(--accent);
+    border-radius: 6px;
+    color: #FFF;
+    border: 0;
+  }
+  .actionButton:focus {
+    outline: 0;
+  }
