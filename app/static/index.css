@@ -64,7 +64,12 @@
 .formContainer {
     width: 100%;
     height: 100%;
-    display: inline-block;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-image: url("https://images.unsplash.com/photo-1558591710-4b4a1ae0f04d?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1834&q=80");
+    background-size: cover;
+
 }
 input {
     -webkit-appearance: none;
@@ -76,6 +81,7 @@ input {
     display: flex;
     flex-direction: column;
     width: 95vw;
+    max-width: 700px;
     background-color: #FFF;
     -webkit-transition: 1s ease-in-out;
     -moz-transition: 1s ease-in-out;

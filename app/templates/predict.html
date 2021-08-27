@@ -17,10 +17,11 @@
                     please fill the form</small>
             </h2>
         </div>
-        <form class="txt-dark">
+        <div class="formContent">
+        <form class="txt-dark " method="POST">
             <div class="mb-3">
               <label for="" class="form-label">Location</label>
-              <select class="form-select" aria-label="Default select example">
+              <select class="form-select" aria-label="Default select example" name='location'>
                 <option selected value='other'>Other</option>
                 {%for i in locations%}
                     <option value="{{i}}">{{i}}</option>
@@ -29,7 +30,7 @@
             </div>
             <div class="mb-3">
               <label for="" class="form-label">Required Squarefeet</label>
-              <input type="number" class="form-control" id="exampleInputPassword1" required >
+              <input type="number" class="form-control" name="sqft" required >
             </div>
             <div class="mb-3">
                 <div class="selectionBlock">
@@ -55,6 +56,7 @@
             <button type="submit" class="btn btn-dark" style="background :var(--text-color); border-color: var(--text-color);">Submit</button>
             </div>
           </form>
+        </div>
     </div>
     </div>
 </div>

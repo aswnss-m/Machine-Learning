@@ -20,8 +20,13 @@ def index():
     else:
         return render_template('index.html')
 
-@app.route('/<string:name>')
+@app.route('/<string:name>',methods=['GET','POST'])
 def predict(name):
+    if request.method == 'POST':
+        Location = request.form['location']
+        Sqft = float(request.form['sqft'])
+        N_BHK = request.data
+        print(N_BHK)
     return render_template('predict.html',name=name,locations = locations)
 if __name__=='__main__':
     app.run(debug=True)
