@@ -2,10 +2,14 @@
     overflow-x: hidden;
 }
 :root{
-    --main-color: #EFEFEF;
-    --secondary-color :#FFC947;
-    --accent :#185ADB;
-    --text-color: #0A1931;
+    --main-color: #ffffff;
+    --secondary-color :#7bbfbaff;
+    --accent :#f43d4fff;
+    --text-color: #133b53ff;
+    /* --main-color: #f43d4fff;
+    --secondary-color :#7bbfbaff;
+    --accent :#133b53ff;
+    --text-color: #ffffff; */
     /* --heading: 'Righteous', cursive;
     --sub-heading: 'Rubik', sans-serif;
     --content-text : 'Merriweather', serif; */

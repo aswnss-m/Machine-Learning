@@ -1,7 +1,16 @@
 from flask import Flask,render_template,request,redirect
 
-app = Flask(__name__)
+with open("Laura/Assets/Model/locations.txt", "r") as f:
+    locations = f.read()
+    locations = locations.strip()[1:len(locations)-1]
+    locations = locations.split(',')
+    location_data = [i.strip() for i in locations]
+    #These datapoints have "'" as a data among them so , and striping the "'" in each name
+    locations = [i[1:len(i)-1] for i in location_data if i != "'"]
 
+
+
+app = Flask(__name__)
 @app.route('/',methods=['GET','POST'])
 def index():
     if request.method == 'POST':
@@ -13,6 +22,6 @@ def index():
 
 @app.route('/<string:name>')
 def predict(name):
-    return render_template('predict.html',name=name)
+    return render_template('predict.html',name=name,locations = locations)
 if __name__=='__main__':
     app.run(debug=True)

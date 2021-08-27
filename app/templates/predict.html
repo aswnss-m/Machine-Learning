@@ -2,6 +2,7 @@
 
 {%block head%}
     <link rel="stylesheet" href="{{url_for('static',filename='predict.css')}}">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
 {%endblock%}
 
 {%block body%}
@@ -15,20 +16,28 @@
                     please fill the form</small>
             </h2>
         </div>
-        <form class="formContent" method="POST">
-            <div class="input">
-                <input type="text" name="Name" class="inputField" id="name" required>
-                <label for="" class="inputLabel">Full Name</label>
+        <form>
+            <div class="mb-3">
+              <label for="" class="form-label">Location</label>
+              <select class="form-select" aria-label="Default select example">
+                <option selected value='other'>Other</option>
+                {%for i in locations%}
+                    <option value="{{i}}">{{i}}</option>
+                {%endfor%}
+              </select>
             </div>
-            <div class="input">
-                <input type="email" name="Email" class='inputField' id="email" required>
-                <label for="" class="inputLabel">Email</label>
+            <div class="mb-3">
+              <label for="" class="form-label">Required Squarefeet</label>
+              <input type="number" class="form-control" id="exampleInputPassword1" required >
             </div>
-            <div class="action">
-                <input type="submit" class="actionButton" value="Submit">
+            <div class="mb-3">
+               <p>No.of Bathroom</p>
             </div>
-        </form>
+            <button type="submit" class="btn btn-primary">Submit</button>
+
+          </form>
     </div>
     </div>
 </div>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-U1DAWAznBHeqEIlVSCgzq+c9gqGAJn5c/t99JyeKa9xxaYpSvHU5awsuZVVFIhvj" crossorigin="anonymous"></script>
 {%endblock%}
