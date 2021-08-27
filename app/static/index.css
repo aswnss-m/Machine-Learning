@@ -62,9 +62,9 @@
     align-items: center;
 }
 .formContainer {
-    width: 95vw;
+    width: 100%;
+    height: 100%;
     display: inline-block;
-    position:absolute;
 }
 input {
     -webkit-appearance: none;
