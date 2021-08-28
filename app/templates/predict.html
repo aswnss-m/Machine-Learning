@@ -18,7 +18,7 @@
             </h2>
         </div>
         <div class="formContent">
-        <form class="txt-dark " method="POST">
+        <form class="txt-dark " method="POST" action="/results">
             <div class="mb-3">
               <label for="" class="form-label">Location</label>
               <select class="form-select" aria-label="Default select example" name='location'>
@@ -30,30 +30,19 @@
             </div>
             <div class="mb-3">
               <label for="" class="form-label">Required Squarefeet</label>
-              <input type="number" class="form-control" name="sqft" required >
+              <input type="number" class="form-control" name="sqft" required min='250' max="100000">
             </div>
             <div class="mb-3">
-                <div class="selectionBlock">
-                No.of Bedroom
-                <div class="outerBox">
-                <div class="innerBox leftBox" ><button class="btn" onclick="increment('L',1)"><</button></div>
-                <div class="innerBox middleBox" id="increment_1">1</div>
-                <div class="innerBox rightBox"><button class="btn" onclick="increment('R',1)">></button></div>
-                </div>
-            </div>
+              <label for="" class="form-label">Number of Bedrooms</label>
+              <input type="number" class="form-control" name="bed" required value="1" min='1' max='50'>
             </div>
             <div class="mb-3">
-                <div class="selectionBlock">
-                No.of Bathroom
-                <div class="outerBox">
-                <div class="innerBox leftBox" ><button class="btn" onclick="increment('L',2)"><</button></div>
-                <div class="innerBox middleBox" id="increment_2">1</div>
-                <div class="innerBox rightBox"><button class="btn" onclick="increment('R',2)">></button></div>
-                </div>
+              <label for="" class="form-label">Number of Bathrooms</label>
+              <input type="number" class="form-control" name="bath" required value="1" min='0' max='100'>
             </div>
-            </div>
+           
             <div class="d-grid">
-            <button type="submit" class="btn btn-dark" style="background :var(--text-color); border-color: var(--text-color);">Submit</button>
+            <input type="submit" class="btn btn-dark" style="background :var(--text-color); border-color: var(--text-color);"  value="Submit">
             </div>
           </form>
         </div>
