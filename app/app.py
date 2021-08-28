@@ -49,7 +49,7 @@ def predict(name):
         bed = int(request.form['bed']) 
         bath = int(request.form['bath'])
         predicted_price = predict_price(location=Location, sqft=Sqft, bath=bath, bhk=bed)
-        return redirect('/'+name+'/results='+ str(predicted_price))
+        return redirect('/'+name+'/results='+ str(round(predicted_price,3)))
     return render_template('predict.html',name=name,locations = locations)
 
 @app.route('/<string:name>/results=<string:ans>')

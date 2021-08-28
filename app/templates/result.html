@@ -1,4 +1,15 @@
 {%extends 'base.html'%}
+{%block head%}
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
+<link rel="stylesheet" href="{{url_for('static',filename='result.css')}}">
+{%endblock%}
 {%block body%}
-    <h1>{{ans}}</h1>
+<div class="content">
+    <div class="image"><img src="{{url_for('static',filename='images/dollor.png')}}" alt="Money.png"></div>
+    <div class="message">
+        <h3 class="subHeading">That house will probably cost</h3>
+        <h1 class="heading">{{ans}} Lakhs</h1>
+        <a href="/"><button class="btn btn-warning">Back</button></a>
+    </div>
+</div>
 {%endblock%}

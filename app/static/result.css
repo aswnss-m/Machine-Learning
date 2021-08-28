@@ -1,0 +1,24 @@
+body{
+    background-color: var(--secondary-color);
+    height: 100vh;
+    overflow-x: hidden;
+}
+.content{
+    width: 95vw;
+    display: flex;
+    flex-direction: column;
+    padding:10px;
+    color:var(--text-color);
+}
+.image{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.image img{
+    width: 30%;
+    min-width: 200px;
+}
+.message{
+    text-align: center;
+}
