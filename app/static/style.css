@@ -44,28 +44,28 @@ body{
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 .heading {
-    font-family: 'Righteous', cursive;
+    font-family: 'Montserrat', cursive;
 }
 .subHeading{
-    font-family: 'Rubik', sans-serif;
+    font-family: 'Poppins', sans-serif;
 }
 .contentText{
-    font-family: 'Merriweather', serif;
+    font-family: 'Rubik', serif;
 }
 .bg-main{
-    background-color: var(--main-color);
+    background-color: var(--main-color) !important;
 }
 .bg-sd{
-    background-color: var(--secondary-color);
+    background-color: var(--secondary-color) !important;
 }
 .bg-accent{
-    background-color: var(--accent);
+    background-color: var(--accent) !important;
 }
 .bg-dark{
-    background-color: var(--text-color);
+    background-color: var(--text-color) !important;
 }
 .txt-main{
-    color: var(--main-color);
+    color: var(--main-color) !important;
 }
 .txt-sd{
     color: var(--secondary-color);
